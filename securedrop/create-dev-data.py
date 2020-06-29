@@ -54,8 +54,9 @@ def main(staging=False):
 
         NUM_SOURCES = os.getenv('NUM_SOURCES', 2)
         if NUM_SOURCES == "ALL":
-            # We want all strings
-            NUM_SOURCES = 43
+            # We want all strings, 14 sources will give all the strings based
+            # on current string count.
+            NUM_SOURCES = 14
         # Add test sources and submissions
         num_sources = int(NUM_SOURCES)
         for i in range(1, num_sources + 1):
